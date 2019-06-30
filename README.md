@@ -21,3 +21,13 @@ urls:
   - <URL einer ImmoScout Suche>
 seen: # Hier werden früher gefundene Wohnungen abgelegt
 ```
+
+## Lizenz
+
+Die Lizenz kann auch in der Datei LICENSE gefunden werden.
+
+Diese Software ist nur für den privaten Gebrauch gestaltet, die kommerzielle Verwendung ist untersagt.
+
+Die Verbreitung des Quellcodes ist nur für die Zwecke der Privaten Verwendung gestattet.
+
+Änderungen am Quellcode müssen an den ursprünglichen Author weitergegeben werden.
