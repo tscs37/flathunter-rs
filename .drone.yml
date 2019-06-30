@@ -1,0 +1,14 @@
+kind: pipeline
+name: default
+
+steps:
+- name: Build Docker Image
+  image: plugins/docker
+  settings:
+    repo: registry.intranet.tscs37.eu/tscs37/flathunter-rs
+      - latest
+    dockerfile: ./Dockerfile
+    custom_dns:
+      from_secret: LOCAL_DNS
+    registry: registry.intranet.tscs37.eu
+    mirror: https://registry-cache.intranet.tscs37.eu/
