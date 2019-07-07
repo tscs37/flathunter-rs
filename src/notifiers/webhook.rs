@@ -72,10 +72,10 @@ impl Notifier for WebhookNotifier {
           embeds: vec![
             Title(EmbedTitle{ title: format!("{} ({} €, {} Rooms, {} m²). {}.",
               res.title,
-              res.address,
               res.price,
               res.rooms,
               res.size,
+              res.address,
             )}),
             Fields(EmbedFields{ fields: vec![
               EmbedField{ name: "Title".to_string(), value: format!("[{}]({})", res.title.clone(), res.url.clone()), inline: false },
