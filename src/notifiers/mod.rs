@@ -7,12 +7,13 @@ mod webhook;
 pub trait Notifier {
   fn new_result(&self, cfg: &Config, res: Housing) -> Result<()> {
     self.post_message(cfg,
-      &format!("New result: {} rooms ({} m²) for {} €: \"{}\". Location: {}.",
+      &format!("New result: {} rooms ({} m²) for {} €: \"{}\". Location: {}. Link: {}",
         res.rooms,
         res.size,
         res.price,
         res.title,
         res.address,
+        res.url,
     ))?;
     Ok(())
   }

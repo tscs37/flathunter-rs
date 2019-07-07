@@ -75,6 +75,7 @@ error_chain! {
       LogLevel(log::SetLoggerError);
       LogLevelParse(log::ParseLevelError);
       TimeError(std::time::SystemTimeError);
+      Json(serde_json::Error);
     }
 
     // Define additional `ErrorKind` variants.  Define custom responses with the
